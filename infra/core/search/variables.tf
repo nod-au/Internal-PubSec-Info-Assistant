@@ -16,7 +16,7 @@ variable "sku" {
     name = string
   })
   default = {
-    name = "standard"
+    name = "basic" # "standard" or "basic", switching to basic for NOD dev testing to save money
   }
 }
 
