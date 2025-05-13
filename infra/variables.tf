@@ -402,7 +402,6 @@ variable "appServiceSkuTier" {
   description = "The tier of the app service plan for the IA website. Must match with the size value in appServiceSkuSize."
   type = string
   default = "Basic"
-  
 }
 
 variable "enrichmentAppServicePlanName" {
