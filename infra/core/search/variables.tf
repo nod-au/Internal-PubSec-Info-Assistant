@@ -16,7 +16,7 @@ variable "sku" {
     name = string
   })
   default = {
-    name = "basic" # "standard" or "basic", switching to basic for NOD dev testing to save money
+    name = "basic" # "standard" or "basic", switching to basic for NOD dev testing to save money. See https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/search_service#sku-1
   }
 }
 

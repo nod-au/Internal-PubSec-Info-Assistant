@@ -392,7 +392,8 @@ variable "appServicePlanName" {
   default = ""
 }
 
-variable "appServiceSkuSize" {
+variable "appServiceSkuSize" {  # This is the size of the app service plan, not the SKU name, which can be found at https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/service_plan#sku_name-1
+                                # It also doesn't need to match the tier, only the sku_name which is skusize is passed to functions.tf and therefore onto (and required) by the API.
   description = "The size of the app service plan for the IA website. Must match with the tier value in appServiceSkuTier."
   type = string
   default = "B1"
